@@ -1,5 +1,5 @@
 name: build_with_test
-  on: pull_requests
+  on: [pull_requests]
     branch: [ master ]
   jobs: test
     run-on: ubuntu-latest
@@ -7,7 +7,7 @@ name: build_with_test
         - uses: actions/checkout@v3
         - uses: actions/setup-java@v3
           with:
-            distribution: temurin
+  1          distribution: temurin
             java-version: 11
         - name: Setup Gradle
           uses: gradle/gradle-build-action@v2
