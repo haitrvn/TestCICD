@@ -4,7 +4,8 @@ jobs:
   Build-and-test-gradle-sample:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Start CI"
+      - name: print
+        run: echo "Start CI"
 
       - name: Check out repository code
         uses: actions/checkout@v3
