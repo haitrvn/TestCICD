@@ -17,3 +17,6 @@ jobs:
 
       - name: Execute Gradle build
         run: ./gradlew build
+
+      - name: Execute Gradle test
+        run: ./gradlew testDebugUnitTest
