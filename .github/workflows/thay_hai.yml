@@ -1,5 +1,5 @@
 name: build_with_test
-  on: [pull_requests]
+  on: [pull_request]
     branch: [ master ]
   jobs: test
     run-on: ubuntu-latest
